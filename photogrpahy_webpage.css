@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins" , sans-serif;
+}
+.main_box {
+    background: url(camera.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+.btn_one i {
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    left: 16px;
+    line-height: 60px;
+    transition: all 0.1s linear;
+}
+.sidebar_menu {
+    position: fixed;
+    left: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: rgb(255, 255, 255, 0.1);
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+    transition: all 0.3s linear;
+}
+.sidebar_menu .logo {
+    position: absolute;
+    width: 100%;
+    line-height: 60px;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.5);
+    height: 60px;
+}
+.sidebar_menu .logo a {
+    position: absolute;
+    left: 65px;
+    color: white;
+    text-decoration: none;
+    font-size: 35px;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+      
+}
+.sidebar_menu .btn_two i{
+    color: grey;
+    font-size: 25px;
+    position: absolute;
+    line-height: 60px;
+    left: 275px;
+    opacity: 0;
+    transition: all 0.1s linear;
+
+}
+.sidebar_menu .menu {
+    color: white;
+    position: absolute;
+    width: 100%;
+    top: 80px;
+    
+}
+.sidebar_menu .menu li {
+    margin-top: 6px;
+    padding: 14px 20px;
+}
+.sidebar_menu .menu i, a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.sidebar_menu .menu i {
+    padding-right: 8px;
+}
+.sidebar_menu .social_media {
+    position: absolute;
+    left: 25%;
+    bottom: 50px;
+}
+.sidebar_menu .social_media i {
+    color: white;
+    opacity: 0.5;
+    padding: 0 5px;
+}
+#check {
+    display: none;
+}
+.sidebar_menu .menu li:hover {
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+}
+.btn_one i:hover {
+    font-size: 35px;
+}
+.btn_two i:hover {
+    font-size: 30px;
+}
+.sidebar_menu .social_media i:hover {
+    opacity: 1;
+    transform: 1.1;
+}
+#check:checked ~ .sidebar_menu {
+    left: 0;
+}
+#check:checked ~ .btn_one {
+    opacity: 0;
+}
+#check:checked ~ .sidebar_menu .btn_two i{
+    opacity: 1;
+}
+.header h1 {
+    position: absolute;
+    left: 65px;
+    top: 10px;
+    color: white;
+    font-size: 35px;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    opacity: 1;
+}
+#check:checked ~ .header h1 {
+    opacity: 0;
+    transition: all 0.3s linear;;
+}
+.main_page {
+    color: white;
+    position: absolute;
+    top: 25%;
+    left: 19%;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    padding: 25px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.09);
+}
+.main_page .desc {
+    width: 600px;
+}
+.main_page h1 {
+    color: rgb(223, 168, 19);
+}
+.get_started {
+    background-color: rgba(255, 255, 255, 0.0);
+    color: white;
+    width: 170px;
+    margin-top: 20px;
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 4px;
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+}
+#navbar{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    color: white;
+    background-color:rgba(255, 255, 255, 0.01); 
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+    justify-content: flex-end;
+    align-content: center;
+    
+}
+.option{
+    font-size: 20px;
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    margin-left: 5px;
+    line-height: 50px;
+}
