@@ -1,0 +1,125 @@
+/* WeatherApp.css */
+
+/* Root container */
+.weather-app {
+  max-width: 480px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+  background: #f0f4f8;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgb(0 0 0 / 0.1);
+  text-align: center;
+  color: #333;
+}
+
+/* Title */
+.app-title {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #1976d2;
+}
+
+/* SearchBox styles */
+.search-box {
+  margin-bottom: 30px;
+}
+
+.search-heading {
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.search-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+/* Style the MUI TextField input */
+#city {
+  flex: 1 1 250px; /* Grow/shrink and min width */
+  min-width: 220px;
+}
+
+/* Button styles */
+.MuiButton-root {
+  min-width: 120px;
+  background-color: #1976d2;
+  font-weight: 600;
+  text-transform: none;
+  transition: background-color 0.3s ease;
+}
+
+.MuiButton-root:hover {
+  background-color: #115293;
+}
+
+/* InfoBox styles */
+.info-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+/* Card overrides */
+.MuiCard-root {
+  max-width: 400px !important;
+  border-radius: 16px !important;
+  box-shadow: 0 6px 18px rgb(25 118 210 / 0.3) !important;
+  background-color: #e3f2fd !important;
+}
+
+/* Typography inside the card */
+.MuiTypography-h5 {
+  font-weight: 700 !important;
+  color: #0d47a1 !important;
+  margin-bottom: 20px !important;
+}
+
+/* Weather icon and temp container */
+.card-content > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Temperature style */
+.MuiTypography-h4 {
+  font-weight: 700 !important;
+  color: #0d47a1 !important;
+}
+
+/* Weather description */
+.MuiTypography-subtitle1 {
+  font-style: italic;
+  text-transform: capitalize;
+  color: #555 !important;
+}
+
+/* Weather details box */
+.card-content > div:last-child > p {
+  margin: 8px 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  .weather-app {
+    margin: 20px 15px;
+    padding: 15px;
+  }
+
+  #city {
+    flex-basis: 100%;
+  }
+
+  .MuiButton-root {
+    flex-basis: 100%;
+  }
+}
